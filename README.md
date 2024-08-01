@@ -36,6 +36,9 @@ optional arguments:
   -s S        SHACL file path
 ```
 
+## Contact
+If you have any question on this code, feel free to reach out to Jihoon Chung (jihoonchung.research@gmail.com)
+
 ## References
 - Devon Sparks, ‘IFC-LD Instance Builder’, available at https://github.com/devonsparks/ifcld-service
 - Gabe Fierro, ‘IFC to Brick’, available at https://github.com/gtfierro/brick-ifc-convert/
