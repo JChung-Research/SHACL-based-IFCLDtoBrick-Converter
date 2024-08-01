@@ -1,0 +1,967 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ifc: <http://ifc-ld.org/schemas/ifc2x3#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108> a ifc:ifcproject ;
+    ifc:globalid [ rdf:value "1w9$dxirj77hkpdvvbeviy"^^xsd:string ] ;
+    ifc:longname [ rdf:value "project name"^^xsd:string ] ;
+    ifc:name [ rdf:value "project number"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:phase [ rdf:value "project status"^^xsd:string ] ;
+    ifc:representationcontexts <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#100> ;
+    ifc:unitsincontext <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#95> ;
+    dcterms:subject <http://ifc-ld.org/ids#1W9$dXIRj77hKpdvvBeVIy> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270222> a ifc:ifcrelaggregates ;
+    ifc:globalid [ rdf:value "2tmaxm4054jrxoa72ucdp5"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269932> ;
+    ifc:relatingobject <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108> ;
+    dcterms:subject <http://ifc-ld.org/ids#2tmaXm4054jRxOa72uCDp5> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269932> a ifc:ifcsite ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "1w9$dxirj77hkpdvvbevi_"^^xsd:string ] ;
+    ifc:name [ rdf:value "default"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269931> ;
+    ifc:objecttype [ rdf:value ""^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:refelevation [ rdf:value 0.0 ] ;
+    ifc:reflatitude ( [ rdf:value 37 ] [ rdf:value 52 ] [ rdf:value 16 ] [ rdf:value 47363 ] ) ;
+    ifc:reflongitude ( [ rdf:value -122 ] [ rdf:value -16 ] [ rdf:value -6 ] [ rdf:value -549682 ] ) ;
+    dcterms:subject <http://ifc-ld.org/ids#1W9$dXIRj77hKpdvvBeVI_> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270226> a ifc:ifcrelaggregates ;
+    ifc:globalid [ rdf:value "1gxqmb7yf0hqc1zrjxw7ed"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#118> ;
+    ifc:relatingobject <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269932> ;
+    dcterms:subject <http://ifc-ld.org/ids#1gXQMb7Yf0HQc1ZRjXw7Ed> .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#118> a ifc:ifcbuilding ;
+    ifc:buildingaddress <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#114> ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "1w9$dxirj77hkpdvvbeviz"^^xsd:string ] ;
+    ifc:longname [ rdf:value ""^^xsd:string ] ;
+    ifc:name [ rdf:value ""^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#32> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    dcterms:subject <http://ifc-ld.org/ids#1W9$dXIRj77hKpdvvBeVIz> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270291> a ifc:ifcrelaggregates ;
+    ifc:globalid [ rdf:value "1yhdish1t5aqqaoygxgihp"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#139> ;
+    ifc:relatingobject <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#118> ;
+    dcterms:subject <http://ifc-ld.org/ids#1yhDISh1T5aQqAoygxGIhP> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133> a ifc:ifcbuildingstorey ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:elevation [ rdf:value 0.0 ] ;
+    ifc:globalid [ rdf:value "1w9$dxirj77hkpdvwqnwji"^^xsd:string ] ;
+    ifc:longname [ rdf:value "level 1"^^xsd:string ] ;
+    ifc:name [ rdf:value "level 1"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#132> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    dcterms:subject <http://ifc-ld.org/ids#1W9$dXIRj77hKpdvwqNWjI> .   
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1759> a ifc:ifcspace ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "1_33xsza17h9dkz8vlyalw"^^xsd:string ] ;
+    ifc:interiororexteriorspace [ rdf:value "internal"^^xsd:string ] ;
+    ifc:longname [ rdf:value "space"^^xsd:string ] ;
+    ifc:name [ rdf:value "19"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1737> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1757> ;
+    dcterms:subject <http://ifc-ld.org/ids#1_33xSZA17H9dKZ8vLYALW> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270230> a ifc:ifcrelaggregates ;
+    ifc:globalid [ rdf:value "2jf4e6axwhqu3u0c9fzlmi"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1086>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1130>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1155>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1189>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1225>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1257>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1289>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1321>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1367>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1394>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1421>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1457>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1484>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1520>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1558>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1592>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1624>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1666>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1700>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1725>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1759>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1784>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1822>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1856>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1904>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1944>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#198>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1984>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2026>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2140>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2198>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2264>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2328>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#234>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2464>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2496>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2625>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#298>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3041>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3066>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#330>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#362>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#408>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#435>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#462>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#489>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#525>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#563>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#599>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#641>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#681>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#796>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#828>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#862>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#902>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#950> ;
+    ifc:relatingobject <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133> ;
+    dcterms:subject <http://ifc-ld.org/ids#2JF4e6axWHqu3u0C9FZlmi> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269553> a ifc:ifcrelassignstogroup ;
+    ifc:globalid [ rdf:value "06b2afrsv0ubhvtl1daacm"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1666>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1700>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1759>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1784>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1822>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1856>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2198>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2264>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2328> ;
+    ifc:relatinggroup <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269552> ;
+    dcterms:subject <http://ifc-ld.org/ids#06B2afrsv0uBHvTl1DaaCm> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269552> a ifc:ifczone ;
+    ifc:globalid [ rdf:value "06b2afrsv0ubhvtl5daacm"^^xsd:string ] ;
+    ifc:name [ rdf:value "default:134083"^^xsd:string ] ;
+    ifc:objecttype [ rdf:value ""^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    dcterms:subject <http://ifc-ld.org/ids#06B2afrsv0uBHvTl5DaaCm> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269560> a ifc:ifcreldefinesbyproperties ;
+    ifc:globalid [ rdf:value "1jpmilcol6x8q4zfbatnzw"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269552> ;
+    ifc:relatingpropertydefinition <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269558> ;
+    dcterms:subject <http://ifc-ld.org/ids#1JpMILCoL6x8Q4ZFbatnZw> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269558> a ifc:ifcpropertyset ;
+    ifc:globalid [ rdf:value "3gx495mnhb1bjsrqcpf7nh"^^xsd:string ] ;
+    ifc:hasproperties <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269556>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269557> ;
+    ifc:name [ rdf:value "pset_zonecommon"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    dcterms:subject <http://ifc-ld.org/ids#3GX495mNHB1BjsrQCpF7NH> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269556> a ifc:ifcpropertysinglevalue ;
+    ifc:name [ rdf:value "reference"^^xsd:string ] ;
+    ifc:nominalvalue [ rdf:value "default"^^xsd:string ] .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269557> a ifc:ifcpropertysinglevalue ;
+    ifc:name [ rdf:value "category"^^xsd:string ] ;
+    ifc:nominalvalue [ rdf:value "hvac zones"^^xsd:string ] .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1757> a ifc:ifcproductdefinitionshape ;
+    ifc:representations ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1755> ) .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1755> a ifc:ifcshaperepresentation ;
+    ifc:contextofitems <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#105> ;
+    ifc:items <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1754> ;
+    ifc:representationidentifier [ rdf:value "body"^^xsd:string ] ;
+    ifc:representationtype [ rdf:value "sweptsolid"^^xsd:string ] .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244181> a ifc:ifclightfixturetype ;
+    ifc:globalid [ rdf:value "09sj_vafpd7vrjwybt2z19"^^xsd:string ] ;
+    ifc:name [ rdf:value "sd8 50lm 35k mvolt g5 80cri zt d cd"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:predefinedtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244180> ) ;
+    ifc:tag [ rdf:value "384860"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#09sj_vaFPD7vrjWYbT2Z19> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271016> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "1v8vo0qtv07vr_hj2amphv"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244197>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244226>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244254>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244282>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244310>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245395> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244181> ;
+    dcterms:subject <http://ifc-ld.org/ids#1v8vO0Qtv07vR_Hj2AMphv> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245395> a ifc:ifcflowterminal ;
+    ifc:globalid [ rdf:value "2hafvofc544ghwbl3m9dnc"^^xsd:string ] ;
+    ifc:name [ rdf:value "indy_sd8_35k_80cri_g5.rfa:sd8 50lm 35k mvolt g5 80cri zt d cd:399847"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245394> ;
+    ifc:objecttype [ rdf:value "sd8 50lm 35k mvolt g5 80cri zt d cd"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245385> ;
+    ifc:tag [ rdf:value "399847"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#2haFvOfC544gHwbl3M9DnC> .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#274878> a ifc:ifcrelcontainedinspatialstructure ;
+    ifc:globalid [ rdf:value "0diw8hzub2jbis1twulel7"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedelements <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#183894>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184033>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184059>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184085>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184111>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244197>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244226>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244254>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244282>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244310>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250109>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250189> ;
+    ifc:relatingstructure <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#234> ;
+    dcterms:subject <http://ifc-ld.org/ids#0DiW8HZUb2JBIs1TWUlel7> .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129869> a ifc:ifcclassificationreference ;
+    ifc:itemreference [ rdf:value "d5020210"^^xsd:string ] ;
+    ifc:location [ rdf:value "http://www.csiorg.net/uniformat"^^xsd:string ] ;
+    ifc:name [ rdf:value "lighting - fluorescent"^^xsd:string ] ;
+    ifc:referencedsource <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3181> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129870> a ifc:ifcrelassociatesclassification ;
+    ifc:description [ rdf:value ""^^xsd:string ] ;
+    ifc:globalid [ rdf:value "2tbkp3qoxdnvki42l_kuaz"^^xsd:string ] ;
+    ifc:name [ rdf:value "uniformat classification"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129835> ;
+    ifc:relatingclassification <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129869> ;
+    dcterms:subject <http://ifc-ld.org/ids#2Tbkp3QoXDnvkI42L_KuAZ> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129835> a ifc:ifclightfixturetype ;
+    ifc:globalid [ rdf:value "3c6vmewcb3luxb9deydnbw"^^xsd:string ] ;
+    ifc:name [ rdf:value "prm4 1 28t5 opd wpb whr 12ft r4 120 geb10 -"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:predefinedtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129834> ) ;
+    ifc:tag [ rdf:value "351613"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#3c6vMewcb3luxb9DEyDNBW> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270998> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "2neyrnuxf1eujibbjscff6"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129888>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129925>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129961>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129995>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130030>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130064>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130099>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130133>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130168>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130202>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#163567> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129835> ;
+    dcterms:subject <http://ifc-ld.org/ids#2NEYrNuxf1EujIbBJsCFF6> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130030> a ifc:ifcflowterminal ;
+    ifc:globalid [ rdf:value "3c6vmewcb3luxb9deydkak"^^xsd:string ] ;
+    ifc:name [ rdf:value "prm4_t5_t5ho:prm4 1 28t5 opd wpb whr 12ft r4 120 geb10 -:353971"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130029> ;
+    ifc:objecttype [ rdf:value "prm4 1 28t5 opd wpb whr 12ft r4 120 geb10 -"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130020> ;
+    ifc:tag [ rdf:value "353971"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#3c6vMewcb3luxb9DEyDKak> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#275029> a ifc:ifcrelcontainedinspatialstructure ;
+    ifc:globalid [ rdf:value "3hx8umkxl6lewljjce$7qn"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedelements <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129888>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#129961>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130030>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130099>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130168>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#158838>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#158875>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#158906>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#158937>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#158968>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#158999>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159030>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159309>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159340>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159371>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159402>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159433>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#159464>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184156>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245120>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245395>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250065>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250847>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266033>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266101>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266355>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266423>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266911>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266953>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266993> ;
+    ifc:relatingstructure <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3041> ;
+    dcterms:subject <http://ifc-ld.org/ids#3HX8UMkxL6LewljJCE$7qN> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3041> a ifc:ifcspace ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "2weldgsfd56a$7sdxhplxv"^^xsd:string ] ;
+    ifc:interiororexteriorspace [ rdf:value "internal"^^xsd:string ] ;
+    ifc:longname [ rdf:value "space"^^xsd:string ] ;
+    ifc:name [ rdf:value "35"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#2637> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3039> ;
+    dcterms:subject <http://ifc-ld.org/ids#2wEldGSfD56A$7SDXhPlXv> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271019> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "34mel$wo5868mpobf5$diz"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244396>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244678>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250976> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244380> ;
+    dcterms:subject <http://ifc-ld.org/ids#34Mel$WO5868mPoBF5$diZ> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245087> a ifc:ifcflowterminal ;
+    ifc:globalid [ rdf:value "2hafvofc544ghwbl3m9ckg"^^xsd:string ] ;
+    ifc:name [ rdf:value "exhaust grill:24 x 24 face 12 x 12 connection:396859"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245086> ;
+    ifc:objecttype [ rdf:value "24 x 24 face 12 x 12 connection"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245077> ;
+    ifc:tag [ rdf:value "396859"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#2haFvOfC544gHwbl3M9CkG> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244380> a ifc:ifcairterminaltype ;
+    ifc:globalid [ rdf:value "09sj_vafpd7vrjwybt2wy5"^^xsd:string ] ;
+    ifc:name [ rdf:value "24 x 24 face 12 x 12 connection"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:predefinedtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244379> ) ;
+    ifc:tag [ rdf:value "386960"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#09sj_vaFPD7vrjWYbT2WY5> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269944> a ifc:ifcrelcontainedinspatialstructure ;
+    ifc:globalid [ rdf:value "2jf4e6axwhqu3u0c5fzlmi"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedelements <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107323>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107369>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107406>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107611>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107819>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107846>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108036>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108062>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108112>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108137>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108162>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108187>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108212>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108237>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108262>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108287>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108312>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108504>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108698>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108891>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108920>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108947>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108974>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109001>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109193>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109233>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109275>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109418>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109445>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109470>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109495>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109520>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109545>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109570>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109764>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109787>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109809>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109831>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109853>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109875>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#109897>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110140>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110285>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110415>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110540>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110575>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110610>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110652>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110694>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110740>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110796>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#110949>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111102>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111179>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111348>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111395>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111452>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111491>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111537>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111578>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111619>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111658>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111697>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111736>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111775>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111814>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111853>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#111892>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113002>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113041>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113080>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113119>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113158>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113197>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113236>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113275>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113314>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113353>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113392>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113431>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#113470>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#163567>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#163650>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#163724>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#163771>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244432>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244474>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245161>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245201>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245245>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245293>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245326>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245366>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#248954>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#249892>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250976>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251367>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251614>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251672>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#255404>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256196>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256988>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#261266>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#261966>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#264350>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#264368>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265068>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265141>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265161>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265181>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265201>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265221>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265241>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265632>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265650>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265668>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265686>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267049>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267094>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267141>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267179>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267331>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267474>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267614>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267641>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267666>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267693>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267720>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267747>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267774>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267801>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267828>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267855>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267882>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267909>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267936>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267963>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267990>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268017>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268044>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268071>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268098>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268125>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268152>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268179>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268206>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268233>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268260>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268287>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268314>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268341>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268368>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268395>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268422>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268449>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268476>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268503>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268530>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268557>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268584>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268611>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268638>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268665>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268692>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268719>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268746>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268773>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268800>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268827>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268854>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268881>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268908>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268935>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268962>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#268989>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269016>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269043>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269070>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269097>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269124>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269151>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269178>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269205>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269232>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269259>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269286>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269313>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269340>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269366>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269393>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269420>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3140>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3247>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3320>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3365>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3409>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3486>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3537>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3592>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3639>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3702>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3753>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3798>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3836>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3874>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#38833>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3919>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3964>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4009>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4054>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4099>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4158>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4198>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4238>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4278>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4392>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4441>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4479>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4530>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4575>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4624>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4675>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4722>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4771>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4811>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4851>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4891>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#4972>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#5019>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72569>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72596>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72622>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72648>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72674>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72700>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72726>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72752>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72778>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72804>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72830>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72856>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72882>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72908>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72934>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72958>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#72982>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73020>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73073>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73119>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73156>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73193>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73230>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73274>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73322>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73370>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73407>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73543>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73570>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#73595> ;
+    ifc:relatingstructure <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133> ;
+    dcterms:subject <http://ifc-ld.org/ids#2JF4e6axWHqu3u0C5FZlmi> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269940> a ifc:ifcreldefinesbyproperties ;
+    ifc:globalid [ rdf:value "052ukcu217ve9xym4upy0z"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133> ;
+    ifc:relatingpropertydefinition <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269938> ;
+    dcterms:subject <http://ifc-ld.org/ids#052ukCu217Ve9XYm4UPY0Z> .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#248953> a ifc:ifcductsegmenttype ;
+    ifc:applicableoccurrence [ rdf:value ""^^xsd:string ] ;
+    ifc:globalid [ rdf:value "24crdir0z4sadtsitqclk9"^^xsd:string ] ;
+    ifc:name [ rdf:value "flex duct round:flex - round"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:predefinedtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:tag [ rdf:value "181491"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#24CRDir0z4SADTSiTQClK9> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271025> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "0ctwqyk_j9aqr7jwl3hsza"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#248954>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#249892>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251614>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#255404>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#261266>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#264350> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#248953> ;
+    dcterms:subject <http://ifc-ld.org/ids#0Ctwqyk_j9AQr7jWl3hszA> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251614> a ifc:ifcflowsegment ;
+    ifc:globalid [ rdf:value "287wjt5jrf$fvxrjsxxr$9"^^xsd:string ] ;
+    ifc:name [ rdf:value "flex duct round:flex - round:407141"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251378> ;
+    ifc:objecttype [ rdf:value "flex duct round:flex - round:181491"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251612> ;
+    ifc:tag [ rdf:value "407141"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#287wJt5jrF$fvxrJsxxr$9> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256196> a ifc:ifcflowfitting ;
+    ifc:globalid [ rdf:value "1re3enzmh5trtjnjyo5tot"^^xsd:string ] ;
+    ifc:name [ rdf:value "rectangular to round transition - angle:60 degree:416957"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256195> ;
+    ifc:objecttype [ rdf:value "60 degree"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256190> ;
+    ifc:tag [ rdf:value "416957"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#1RE3ENZMH5tRtjNJyo5toT> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271049> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "05nu0y68p009r_y68tso0f"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256196> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256184> ;
+    dcterms:subject <http://ifc-ld.org/ids#05nu0Y68P009R_Y68tSO0f> .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256184> a ifc:ifcductfittingtype ;
+    ifc:globalid [ rdf:value "1re3enzmh5trtjnjyo5tov"^^xsd:string ] ;
+    ifc:name [ rdf:value "60 degree"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:predefinedtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256183> ) ;
+    ifc:tag [ rdf:value "416959"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#1RE3ENZMH5tRtjNJyo5toV> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269640> a ifc:ifcdistributionport ;
+    ifc:description [ rdf:value "flow"^^xsd:string ] ;
+    ifc:flowdirection [ rdf:value "source"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "3rmospz$t7eh_ukvijawzr"^^xsd:string ] ;
+    ifc:name [ rdf:value "outport_403245"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269638> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    dcterms:subject <http://ifc-ld.org/ids#3rMOsPz$T7eh_UkVIjaWZR> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269642> a ifc:ifcrelconnectsporttoelement ;
+    ifc:description [ rdf:value "flow"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "1xrirnklrc9x0sfziullpw"^^xsd:string ] ;
+    ifc:name [ rdf:value "403245|1xrirnklrc9x0sfziullpw"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedelement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250189> ;
+    ifc:relatingport <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269640> ;
+    dcterms:subject <http://ifc-ld.org/ids#1XRIrNKLrC9x0SfZIulLpW> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269645> a ifc:ifcrelconnectsports ;
+    ifc:description [ rdf:value "flow"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "04eev1fcj1nrb8xiv_sedl"^^xsd:string ] ;
+    ifc:name [ rdf:value "2od$_nz3nesqpgtr0jge96|3rmospz$t7eh_ukvijawzr"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedport <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269640> ;
+    ifc:relatingport <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269627> ;
+    dcterms:subject <http://ifc-ld.org/ids#04eEv1FCj1NRb8XIV_sEdL> .
+
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107789> a ifc:ifcwindowstyle ;
+    ifc:constructiontype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "05ieac6xtazbwafsflrmfi"^^xsd:string ] ;
+    ifc:haspropertysets <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107788> ;
+    ifc:name [ rdf:value "30\" x 82\""^^xsd:string ] ;
+    ifc:operationtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:parametertakesprecedence [ rdf:value false ] ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107787> ) ;
+    ifc:sizeable [ rdf:value false ] ;
+    ifc:tag [ rdf:value "322622"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#05ieac6xTAzBWAFSFlRmfI> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270965> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "0rdwyy0t13v9nzq0pec8at"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107819>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107846>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108112>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108212> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107789> ;
+    dcterms:subject <http://ifc-ld.org/ids#0RDWyy0T13v9nZQ0pEc8At> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107819> a ifc:ifcwindow ;
+    ifc:globalid [ rdf:value "05ieac6xtazbwaftrlrmfa"^^xsd:string ] ;
+    ifc:name [ rdf:value "double hung:30\" x 82\":322625"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271953> ;
+    ifc:objecttype [ rdf:value "30\" x 82\""^^xsd:string ] ;
+    ifc:overallheight [ rdf:value 6.83333333333333 ] ;
+    ifc:overallwidth [ rdf:value 2.5 ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107813> ;
+    ifc:tag [ rdf:value "322625"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#05ieac6xTAzBWAFTRlRmfA> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266659> a ifc:ifcfurnishingelement ;
+    ifc:globalid [ rdf:value "25rkhxbj573rcfbxf4wjxs"^^xsd:string ] ;
+    ifc:name [ rdf:value "work station cubicle:120\" x 102\":425018"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266658> ;
+    ifc:objecttype [ rdf:value "120\" x 102\""^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266649> ;
+    ifc:tag [ rdf:value "425018"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#25RKHxbj573RCFbXF4WjxS> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271064> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "3$2mwhump4luiavefthwuo"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266033>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266659>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266701>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266827>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266869>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266993> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265991> ;
+    dcterms:subject <http://ifc-ld.org/ids#3$2mwHumP4luiAVEFthwUo> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265991> a ifc:ifcsystemfurnitureelementtype ;
+    ifc:elementtype [ rdf:value "120\" x 102\""^^xsd:string ] ;
+    ifc:globalid [ rdf:value "25rkhxbj573rcfbxf4wjzx"^^xsd:string ] ;
+    ifc:name [ rdf:value "120\" x 102\""^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265990> ) ;
+    ifc:tag [ rdf:value "424477"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#25RKHxbj573RCFbXF4WjZx> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107611> a ifc:ifcdoor ;
+    ifc:globalid [ rdf:value "0xmgx_djj3obqfqn1xsrwf"^^xsd:string ] ;
+    ifc:name [ rdf:value "door-double-glass:72\" x 84\":320502"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#274381> ;
+    ifc:objecttype [ rdf:value "72\" x 84\""^^xsd:string ] ;
+    ifc:overallheight [ rdf:value 7.0 ] ;
+    ifc:overallwidth [ rdf:value 6.0 ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107605> ;
+    ifc:tag [ rdf:value "320502"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#0XmGX_Djj3oBqfQn1xSRWF> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#270962> a ifc:ifcreldefinesbytype ;
+    ifc:globalid [ rdf:value "1dqw7loqx1kb1naqtzsily"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107611> ;
+    ifc:relatingtype <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107570> ;
+    dcterms:subject <http://ifc-ld.org/ids#1DqW7LoqX1KB1naQtZsilY> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107570> a ifc:ifcdoorstyle ;
+    ifc:constructiontype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "0xmgx_djj3obqfqmlxsrw6"^^xsd:string ] ;
+    ifc:haspropertysets <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107568>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107569> ;
+    ifc:name [ rdf:value "72\" x 84\""^^xsd:string ] ;
+    ifc:operationtype [ rdf:value "notdefined"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:parametertakesprecedence [ rdf:value false ] ;
+    ifc:representationmaps ( <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107567> ) ;
+    ifc:sizeable [ rdf:value false ] ;
+    ifc:tag [ rdf:value "320484"^^xsd:string ] ;
+    dcterms:subject <http://ifc-ld.org/ids#0XmGX_Djj3oBqfQmLxSRW6> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271525> a ifc:ifcsystem ;
+    ifc:globalid [ rdf:value "3o6hbxb3f4igfxc2n$x2m9"^^xsd:string ] ;
+    ifc:name [ rdf:value "mechanical return air 1"^^xsd:string ] ;
+    ifc:objecttype [ rdf:value "return air"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    dcterms:subject <http://ifc-ld.org/ids#3o6hBXB3f4igFXC2N$x2m9> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271527> a ifc:ifcrelservicesbuildings ;
+    ifc:globalid [ rdf:value "1xm6plvnf82xqouprjgfrs"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedbuildings <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#118> ;
+    ifc:relatingsystem <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271525> ;
+    dcterms:subject <http://ifc-ld.org/ids#1XM6PlVNf82xQoUpRJGfrS> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271531> a ifc:ifcrelassignstogroup ;
+    ifc:globalid [ rdf:value "1iqcxop$leuoysimfjkbvu"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedobjects <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250189>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250211>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251367>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251672>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#252377>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#255404>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256196>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256988>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#261266>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#261966>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#264350>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#264368>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#265068>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269627>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269640>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269651>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269661>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269674>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269682>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269693>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269703>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269715>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269722>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269735>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269744>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269756>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269765>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269777>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269786>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269797>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269805>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269816>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269825>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269837>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269845> ;
+    ifc:relatinggroup <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271525> ;
+    dcterms:subject <http://ifc-ld.org/ids#1iQcxOP$LEUOySImFJKbVu> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#274944> a ifc:ifcrelcontainedinspatialstructure ;
+    ifc:globalid [ rdf:value "2znse$_jlftfupdhlb2yjh"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedelements <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266168>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266234>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266489>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266555>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266575>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266597>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266617>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266639>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266659>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266681>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266701>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266723>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266743>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266765>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266785>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266807>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266827>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266849>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266869>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266891>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266933>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266973>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#267015> ;
+    ifc:relatingstructure <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1130> ;
+    dcterms:subject <http://ifc-ld.org/ids#2znse$_jLFtfuPDHLb2yJH> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1130> a ifc:ifcspace ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "09sj_vafpd7vrjwybt2xbu"^^xsd:string ] ;
+    ifc:interiororexteriorspace [ rdf:value "internal"^^xsd:string ] ;
+    ifc:longname [ rdf:value "open office"^^xsd:string ] ;
+    ifc:name [ rdf:value "23"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1098> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1128> ;
+    dcterms:subject <http://ifc-ld.org/ids#09sj_vaFPD7vrjWYbT2XbU> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#274878> a ifc:ifcrelcontainedinspatialstructure ;
+    ifc:globalid [ rdf:value "0diw8hzub2jbis1twulel7"^^xsd:string ] ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:relatedelements <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#183894>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184033>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184059>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184085>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#184111>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244197>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244226>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244254>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244282>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#244310>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250087>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250109>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#250189> ;
+    ifc:relatingstructure <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#234> ;
+    dcterms:subject <http://ifc-ld.org/ids#0DiW8HZUb2JBIs1TWUlel7> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#234> a ifc:ifcspace ;
+    ifc:compositiontype [ rdf:value "element"^^xsd:string ] ;
+    ifc:globalid [ rdf:value "09sj_vafpd7vrjwybt2xhf"^^xsd:string ] ;
+    ifc:interiororexteriorspace [ rdf:value "internal"^^xsd:string ] ;
+    ifc:longname [ rdf:value "kitchen"^^xsd:string ] ;
+    ifc:name [ rdf:value "3"^^xsd:string ] ;
+    ifc:objectplacement <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#210> ;
+    ifc:ownerhistory <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#41> ;
+    ifc:representation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#232> ;
+    dcterms:subject <http://ifc-ld.org/ids#09sj_vaFPD7vrjWYbT2XhF> .

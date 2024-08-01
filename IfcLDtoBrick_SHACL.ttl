@@ -1,0 +1,576 @@
+@prefix ifc: <http://ifc-ld.org/schemas/ifc2x3#> .
+@prefix ifcld: <http://ifc-ld.org/graphs/> .
+@prefix mod: <http://ifc-ld.org/profiles/bot/ifc2x3#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+brick:
+	sh:declare [
+		sh:prefix "brick" ;
+		sh:namespace "https://brickschema.org/schema/Brick#"^^xsd:anyURI ;
+	] .
+
+mod:BrickifcProjectRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcproject ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?project a brick:ifcProject .  
+            } WHERE {
+                ?project a ifc:ifcproject . 
+                ?relaggregates a ifc:ifcrelaggregates . 
+                ?relaggregates ifc:relatingobject ?project . 
+                ?relaggregates ifc:relatedobjects ?site .
+                ?site a ifc:ifcsite .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickSiteRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcsite ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?site a brick:Site .  
+            } WHERE {
+                ?site a ifc:ifcsite . 
+                ?relaggregates a ifc:ifcrelaggregates . 
+                ?relaggregates ifc:relatingobject ?site . 
+                ?relaggregates ifc:relatedobjects ?building .
+                ?building a ifc:ifcbuilding .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickBuildingRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcbuilding ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?building a brick:Building .  
+            } WHERE {
+                ?building a ifc:ifcbuilding . 
+                ?relaggregates a ifc:ifcrelaggregates . 
+                ?relaggregates ifc:relatingobject ?building . 
+                ?relaggregates ifc:relatedobjects ?buildingStorey .
+                ?buildingStorey a ifc:ifcbuildingstorey .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickStoreyRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcbuildingstorey ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?buildingStorey a brick:Storey .  
+            } WHERE {
+                ?buildingStorey a ifc:ifcbuildingstorey . 
+                ?relaggregates a ifc:ifcrelaggregates . 
+                ?relaggregates ifc:relatingobject ?buildingStorey . 
+                ?relaggregates ifc:relatedobjects ?space .
+                ?space a ifc:ifcspace .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickSpaceRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcspace ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?space a brick:Space .  
+            } WHERE {
+                ?buildingStorey a ifc:ifcbuildingstorey . 
+                ?relaggregates a ifc:ifcrelaggregates . 
+                ?relaggregates ifc:relatingobject ?buildingStorey . 
+                ?relaggregates ifc:relatedobjects ?space .
+                ?space a ifc:ifcspace .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickZoneRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifczone ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?zone a brick:Zone .  
+            } WHERE {
+                ?zone a ifc:ifczone . 
+                ?relassignstogroup a ifc:ifcrelassignstogroup . 
+                ?relassignstogroup ifc:relatinggroup ?zone . 
+                ?relassignstogroup ifc:relatedobjects ?space .
+                ?space a ifc:ifcspace .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickHVACZoneRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifczone ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?zone a brick:HVACZone .  
+            } WHERE {
+                ?zone a ifc:ifczone . 
+                ?reldefinesbyproperties a ifc:ifcreldefinesbyproperties .
+                ?reldefinesbyproperties ifc:relatedobjects ?zone .
+                ?reldefinesbyproperties ifc:relatingpropertydefinition ?relatingpropertydefinition .
+                ?relatingpropertydefinition ifc:hasproperties ?propertysinglevalue .
+                ?propertysinglevalue ifc:nominalvalue [ rdf:value "hvac zones"^^xsd:string ] .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickIFCReferenceShapeRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcshaperepresentation ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?shaperepresentation a brick:IFCReferenceShape .  
+            } WHERE {
+                ?shaperepresentation a ifc:ifcshaperepresentation .
+                ?productdefinitionshape ifc:representations (?shaperepresentation) .
+                ?productdefinitionshape a ifc:ifcproductdefinitionshape .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickLightingRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifclightfixturetype ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?flowterminal a brick:Lighting .  
+            } WHERE {
+                ?lightfixturetype a ifc:ifclightfixturetype . 
+                ?reldefinesbytype ifc:relatingtype ?lightfixturetype .  
+                ?reldefinesbytype ifc:relatedobjects ?flowterminal .
+                ?flowterminal a ifc:ifcflowterminal .          
+            }
+			""" ;
+	] 
+.
+
+mod:BrickTerminalUnitRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcflowterminal ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?flowterminal a brick:TerminalUnit .  
+            } WHERE {
+                ?flowterminal a ifc:ifcflowterminal .
+                ?reldefinesbytype a ifc:ifcreldefinesbytype .
+                ?reldefinesbytype ifc:relatedobjects ?flowterminal .
+                ?reldefinesbytype ifc:relatingtype ?airterminaltype .
+                ?airterminaltype a ifc:ifcairterminaltype .                                
+            }
+			""" ;
+	] 
+.
+
+mod:BrickAirPlenumRulefromDuctSegmentType
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcflowsegment ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?flowsegment a brick:AirPlenumFromDuctSegment .  
+            } WHERE {
+                ?flowsegment a ifc:ifcflowsegment .
+                ?reldefinesbytype a ifc:ifcreldefinesbytype .
+                ?reldefinesbytype ifc:relatedobjects ?flowsegment .
+                ?reldefinesbytype ifc:relatingtype ?ductsegmenttype .
+                ?ductsegmenttype a ifc:ifcductsegmenttype .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickAirPlenumRulefromDuctFittingType
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcflowfitting ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?flowfitting a brick:AirPlenumFromDuctFitting .  
+            } WHERE {
+                ?flowfitting a ifc:ifcflowfitting .
+                ?reldefinesbytype a ifc:ifcreldefinesbytype .
+                ?reldefinesbytype ifc:relatedobjects ?flowfitting .
+                ?reldefinesbytype ifc:relatingtype ?ductfittingtype .
+                ?ductfittingtype a ifc:ifcductfittingtype .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickAirDiffuserRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcdistributionport ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?distributionport a brick:AirDiffuser .  
+            } WHERE {
+                ?distributionport a ifc:ifcdistributionport .
+                ?relconnectsporttoelement a ifc:ifcrelconnectsporttoelement .
+                ?relconnectsporttoelement ifc:relatingport ?distributionport .
+                ?relconnectsports a ifc:ifcrelconnectsports .
+                ?relconnectsports ifc:relatedport ?distributionport .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickSystemRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcsystem ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?system a brick:System .  
+            } WHERE {
+                ?system a ifc:ifcsystem .
+                ?relservicesbuildings a ifc:ifcrelservicesbuildings .
+                ?relservicesbuildings ifc:relatingsystem ?system .
+                ?relservicesbuildings ifc:relatedbuildings ?building .
+                ?building a ifc:ifcbuilding .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickFurniturefromWindow
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcwindow ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?window a brick:FurnitureFromWindow .  
+            } WHERE {
+                ?window a ifc:ifcwindow .
+                ?reldefinesbytype a ifc:ifcreldefinesbytype .
+                ?reldefinesbytype ifc:relatedobjects ?window .
+                ?reldefinesbytype ifc:relatingtype ?windowstyle .
+                ?windowstyle a ifc:ifcwindowstyle .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickFurniturefromDoor
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcdoor ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?door a brick:FurnitureFromDoor .  
+            } WHERE {
+                ?door a ifc:v .
+                ?reldefinesbytype a ifc:ifcreldefinesbytype .
+                ?reldefinesbytype ifc:relatedobjects ?door .
+                ?reldefinesbytype ifc:relatingtype ?doorstyle .
+                ?doorstyle a ifc:ifcdoorstyle .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickFurniturefromFurnishingElement
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcfurnishingelement ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?furnishing a brick:FurnitureFromFurnishing .  
+            } WHERE {
+                ?furnishing a ifc:ifcfurnishingelement .                
+                ?reldefinesbytype a ifc:ifcreldefinesbytype .
+                ?reldefinesbytype ifc:relatedobjects ?furnishing .
+                ?reldefinesbytype ifc:relatingtype ?systemfurnitureelementtype .
+                ?windowstyle a ifc:ifcsystemfurnitureelementtype .
+            }
+			""" ;
+	] 
+.
+
+
+
+mod:BrickIsLocationOfRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcproject ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?project brick:hasLocation ?site .  
+            } WHERE {
+                ?project a ifc:ifcproject .                 
+                ?relaggregates a ifc:ifcrelaggregates . 
+                ?relaggregates ifc:relatingobject ?project . 
+                ?relaggregates ifc:relatedobjects ?site .
+                ?site a ifc:ifcsite .
+            }
+			""" ;
+	] 
+.
+
+mod:BrickHasPartRule_relaggregates
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcrelaggregates ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?A brick:hasPart ?B .  
+            } WHERE {
+                {
+                    ?A a ifc:ifcsite . 
+                    ?relaggregates a ifc:ifcrelaggregates . 
+                    ?relaggregates ifc:relatingobject ?A . 
+                    ?relaggregates ifc:relatedobjects ?B .
+                    ?B a ifc:ifcbuilding .
+                } UNION {
+                    ?A a ifc:ifcbuilding . 
+                    ?relaggregates a ifc:ifcrelaggregates . 
+                    ?relaggregates ifc:relatingobject ?A . 
+                    ?relaggregates ifc:relatedobjects ?B .
+                    ?B a ifc:ifcbuildingstorey .
+                } UNION {
+                    ?A a ifc:ifcbuildingstorey . 
+                    ?relaggregates a ifc:ifcrelaggregates . 
+                    ?relaggregates ifc:relatingobject ?A . 
+                    ?relaggregates ifc:relatedobjects ?B .
+                    ?B a ifc:ifcspace .
+                }
+            }			
+            """ ;
+	] 
+.
+
+mod:BrickHasPartRule_relassignstogroup
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcrelassignstogroup ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?A brick:hasPart ?B .  
+            } WHERE {
+                {
+                    ?A a ifc:ifczone . 
+                    ?relassignstogroup a ifc:ifcrelassignstogroup . 
+                    ?relassignstogroup ifc:relatinggroup ?A . 
+                    ?relassignstogroup ifc:relatedobjects ?B .
+                    ?B a ifc:ifcspace .
+                } UNION {
+                    ?A a ifc:ifcsystem .
+                    ?relassignstogroup a ifc:ifcrelassignstogroup .
+                    ?relassignstogroup ifc:relatinggroup ?A .
+                    ?relassignstogroup ifc:relatedobjects ?B .
+                    ?B a ifc:ifcdistributionport .
+                }
+            }			
+            """ ;
+	] 
+.
+
+mod:BrickHasPartRule_relcontainedinspatialstructure
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcrelcontainedinspatialstructure ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?A brick:isLocationOf ?B .  
+            } WHERE {
+                {                
+                    ?A a ifc:ifcspace .
+                    ?relcontainedinspatialstructure a ifc:ifcrelcontainedinspatialstructure .
+                    ?relcontainedinspatialstructure ifc:relatingstructure ?A . 
+                    ?relcontainedinspatialstructure ifc:relatedelements ?B .
+                    ?B a ifc:ifcflowterminal .
+                } UNION {
+                    ?A a ifc:ifcbuildingstorey .
+                    ?relcontainedinspatialstructure a ifc:ifcrelcontainedinspatialstructure .
+                    ?relcontainedinspatialstructure ifc:relatingstructure ?A . 
+                    ?relcontainedinspatialstructure ifc:relatedelements ?B .
+                    ?B a ifc:ifcflowsegment .
+                } UNION {
+                    ?A a ifc:ifcbuildingstorey .
+                    ?relcontainedinspatialstructure a ifc:ifcrelcontainedinspatialstructure .
+                    ?relcontainedinspatialstructure ifc:relatingstructure ?A . 
+                    ?relcontainedinspatialstructure ifc:relatedelements ?B .
+                    ?B a ifc:ifcflowfitting .
+                } UNION {
+                    ?A a ifc:ifcbuildingstorey .
+                    ?relcontainedinspatialstructure a ifc:ifcrelcontainedinspatialstructure .
+                    ?relcontainedinspatialstructure ifc:relatingstructure ?A . 
+                    ?relcontainedinspatialstructure ifc:relatedelements ?B .
+                    ?B a ifc:ifcwindow .
+                } UNION {
+                    ?A a ifc:ifcbuildingstorey .
+                    ?relcontainedinspatialstructure a ifc:ifcrelcontainedinspatialstructure .
+                    ?relcontainedinspatialstructure ifc:relatingstructure ?A . 
+                    ?relcontainedinspatialstructure ifc:relatedelements ?B .
+                    ?B a ifc:ifcdoor .
+                } UNION {
+                    ?A a ifc:ifcspace .
+                    ?relcontainedinspatialstructure a ifc:ifcrelcontainedinspatialstructure .
+                    ?relcontainedinspatialstructure ifc:relatingstructure ?A . 
+                    ?relcontainedinspatialstructure ifc:relatedelements ?B .
+                    ?B a ifc:ifcfurnishingelement .
+                }
+            }			
+            """ ;
+	] 
+.
+
+mod:BrickHasPartRule_relservicesbuildings
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcrelservicesbuildings ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?A brick:hasPart ?B .  
+            } WHERE {
+                {
+                    ?A a ifc:ifcbuilding . 
+                    ?relservicesbuildings a ifc:ifcrelservicesbuildings . 
+                    ?relservicesbuildings ifc:relatedbuildings ?A . 
+                    ?relservicesbuildings ifc:relatingsystem ?B .
+                    ?B a ifc:ifcsystem .
+                }
+            }			
+            """ ;
+	] 
+.
+
+mod:hasExternalReferenceRule
+	a sh:NodeShape ;
+	sh:targetClass ifc:ifcrelservicesbuildings ;
+	sh:rule [
+		a sh:SPARQLRule ;
+		sh:prefixes rdf: ;
+        sh:prefixes brick: ;
+        sh:prefixes ifc: ;
+		sh:construct """
+            CONSTRUCT {
+                ?A brick:hasExternalReference ?B .  
+            } WHERE {
+                {
+                    ?A a ifc:ifcspace . 
+                    ?A ifc:representation ?productdefinitionshape .
+                    ?productdefinitionshape ifc:representations (?B) .
+                    ?B a ifc:ifcshaperepresentation .
+                }
+            }			
+            """ ;
+	] 
+.

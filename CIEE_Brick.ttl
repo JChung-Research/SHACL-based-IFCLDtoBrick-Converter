@@ -1,0 +1,60 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#108> a brick:ifcProject ;
+    brick:hasLocation <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269932> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269552> a brick:HVACZone,
+        brick:Zone ;
+    brick:hasPart <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1759> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107819> a brick:FurnitureFromWindow .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1130> a brick:Space ;
+    brick:isLocationOf <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266659> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#118> a brick:Building ;
+    brick:hasPart <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271525> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130030> a brick:Lighting .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#133> a brick:Storey ;
+    brick:hasPart <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1130>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1759>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#234>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3041> ;
+    brick:isLocationOf <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107611>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#107819>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251614>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256196> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1755> a brick:IFCReferenceShape .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#234> a brick:Space ;
+    brick:isLocationOf <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245087> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245087> a brick:TerminalUnit .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245395> a brick:Lighting .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#251614> a brick:AirPlenumFromDuctSegment .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#256196> a brick:AirPlenumFromDuctFitting .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#266659> a brick:FurnitureFromFurnishing .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269640> a brick:AirDiffuser .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269932> a brick:Site ;
+    brick:hasPart <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#118> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#271525> a brick:System ;
+    brick:hasPart <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#269640> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#3041> a brick:Space ;
+    brick:isLocationOf <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#130030>,
+        <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#245395> .
+
+<http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1759> a brick:Space ;
+    brick:hasExternalReference <http://ifc-ld.org/graphs/3ce4b815-d6fb-4364-84a2-f668aed0d2ba#1755> .
+
