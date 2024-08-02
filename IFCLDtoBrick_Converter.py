@@ -18,9 +18,9 @@ def IFCLDtoBrick_converter(inputFile, outputFile, shaclFile):
 
     # The goal of this shape graph is to construct Brick graphs
     sh = Graph()
-    data_graph = inputFile#"CIEE_IFC-LD_light.ttl"
+    data_graph = inputFile
     g.parse(data_graph)
-    shapes_graph = shaclFile#"IfcLDtoBrick_SHACL_Jihoon_20240709.ttl"
+    shapes_graph = shaclFile
     sh.parse(shapes_graph)
 
     print("Generating Brick graphs..")
@@ -75,7 +75,7 @@ def IFCLDtoBrick_converter(inputFile, outputFile, shaclFile):
 
     # Save the Brick graph data
     brickGraph.serialize(
-        destination=outputFile,#"CIEE_Brick.ttl", 
+        destination=outputFile,
         indent=2, 
         # context=context,
         format="ttl",
